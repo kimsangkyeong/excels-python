@@ -4,12 +4,14 @@
 # Description : If Excel's Objects is used, it is an example program that automatically saves the values by reading them. 
 #               Can be applied with the ability to automatically collect answers in questionnaires
 # Information : https://docs.microsoft.com/en-us/office/vba/api/Excel.Workbook
+#               https://pypi.org/project/pywin32/
 #               install win32com.client  : pip install pywin32
 #               install xlwt             : pip install xlwt
 #               https://docs.microsoft.com/en-us/office/vba/api/excel.xldirection
 #               Data를 포함하는 마지막 Row, Column Search를 위한 파라미터 : xlUp(-4162), xlDown(-4121), xlToLeft(-4159), xlToRight(-4161)
 #               ex) ws.Range('B1').End(-4121).Row, ws.Range('A9').End(-4161).Column) 
 # Dependency  : execel_objects.xlsx (Questionnaire file with predefined objects set)
+#               pywin32 - release 228
 #############################################################################################################################
 
 from win32com.client import gencache # pip install pywin32
